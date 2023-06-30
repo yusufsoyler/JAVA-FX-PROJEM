@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="661.0"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.girisController">
+   <children>
+      <SplitPane dividerPositions="0.4931714719271624" layoutX="160.0" layoutY="98.0" prefHeight="626.0" prefWidth="661.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="624.0" prefWidth="355.0" style="-fx-background-color: #409aec;">
+               <children>
+                  <ImageView fitHeight="327.0" fitWidth="353.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/Siyah%20Beyaz%20Modern%20Otomobil%20Rent%20A%20Car%20Logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="273.0" fitWidth="322.0" layoutY="326.0">
+                     <image>
+                        <Image url="@../../../../Downloads/Siyah%20Kırmızı%20Modern%20Oto%20Kiralama%20Logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="624.0" prefWidth="380.0" style="-fx-background-color: #74daa9;">
+               <children>
+                  <ImageView fitHeight="47.0" fitWidth="51.0" layoutX="32.0" layoutY="424.0">
+                     <image>
+                        <Image url="@../../../../Desktop/icons/add-user.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="txt_kul" alignment="TOP_CENTER" layoutX="82.0" layoutY="131.0" promptText="KULLANICI ADI" style="-fx-background-color: #fff2cc;" />
+                  <TextField fx:id="txt_sifre" alignment="TOP_CENTER" layoutX="82.0" layoutY="203.0" promptText="ŞİFRE" style="-fx-background-color: #fff2cc;" />
+                  <Button fx:id="btn_giris" layoutX="101.0" layoutY="299.0" mnemonicParsing="false" onAction="#btn_giris_Click" prefHeight="56.0" prefWidth="112.0" style="-fx-background-color: #fff2cc;" text="GİRİŞ" textFill="#e11d1d">
+                     <font>
+                        <Font name="Corbel" size="20.0" />
+                     </font></Button>
+                  <Button fx:id="btn_ekle" layoutX="14.0" layoutY="471.0" mnemonicParsing="false" onAction="#btn_ekle_Click" prefHeight="36.0" prefWidth="93.0" style="-fx-background-color: #ef7979;" text="ÜYE EKLE" />
+                  <Button fx:id="btn_sil" layoutX="118.0" layoutY="471.0" mnemonicParsing="false" onAction="#btn_sil_Click" prefHeight="36.0" prefWidth="93.0" style="-fx-background-color: #ef7979;" text="ÜYE SİL" />
+                  <Button fx:id="btn_güncelle" layoutX="220.0" layoutY="471.0" mnemonicParsing="false" onAction="#btn_güncelle_Click" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #ef7979;" text="ÜYE GÜNCELLE " />
+                  <Label fx:id="lbl_sonuc" layoutX="15.0" layoutY="515.0" prefHeight="17.0" prefWidth="296.0" />
+                  <ImageView fitHeight="47.0" fitWidth="51.0" layoutX="138.0" layoutY="424.0">
+                     <image>
+                        <Image url="@../../../../Desktop/icons/remove-user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="41.0" layoutY="202.0">
+                     <image>
+                        <Image url="@../../../../Desktop/icons/padlock.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="41.0" layoutY="131.0">
+                     <image>
+                        <Image url="@../../../../Desktop/icons/user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="47.0" fitWidth="51.0" layoutX="242.0" layoutY="422.0">
+                     <image>
+                        <Image url="@../../../../Desktop/icons/transaction.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
